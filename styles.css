@@ -1,4 +1,89 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Oswald&display=swap');
 
 body {
+  font-family: 'Krona One', sans-serif;
+}
+
+#weekly-forecast {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+}
+
+.day__details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #4db0d3;
+}
+
+.details__weather {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 50px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
+    11px 4px 34px rgba(32, 77, 92, 0.7);
+}
+
+.details__weather .weather__content.content__dark-bg {
+  color: #d3ebf4;
+}
+
+.details__weather .weather__content.content__light-bg {
+  color: #247490;
+}
+
+.weekly-forecast__cloudy .details__weather {
+  color: #e6df95;
+  background: #4db0d3;
+}
+
+.weekly-forecast__cloudy .details__weather .weather__icon {
+  content: url('./images/cloudy.svg');
+}
+
+.weekly-forecast__sunny .details__weather {
+  color: #4db0d3;
+  background: #e6df95;
+}
+
+.weekly-forecast__sunny .details__weather .weather__icon {
+  content: url('./images/sunny.svg');
+}
+
+.weekly-forecast__stormy .details__weather {
+  color: #e6df95;
+  background: #0e2e3a;
+}
+
+.weekly-forecast__stormy .details__weather .weather__icon {
+  content: url('./images/stormy.svg');
+}
+
+.weekly-forecast__snowy .details__weather {
+  color: #0e2e3a;
+  background: #bce1ef;
+}
+
+.weekly-forecast__snowy .details__weather .weather__icon {
+  content: url('./images/snowy.svg');
+}
+
+.weekly-forecast__rainy .details__weather {
+  color: #e6df95;
+  background: #4db0d3;
+}
+
+.weekly-forecast__rainy .details__weather .weather__icon {
+  content: url('./images/rainy.svg');
+}
+
+.weekly-forecast__partly-cloudy .details__weather {
+  color: #e6df95;
+  background: #2b8bad;
+}
+
+.weekly-forecast__partly-cloudy .details__weather .weather__icon {
+  content: url('./images/partly-cloudy.svg');
 }
