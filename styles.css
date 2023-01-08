@@ -12,7 +12,7 @@ body {
 #weekly-forecast {
   display: flex;
   flex-direction: row;
-  gap: 24px;
+  gap: 26px;
 }
 
 .day__details {
@@ -36,11 +36,13 @@ body {
 }
 
 .details__weather {
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 24px;
   max-width: 165px;
-  height: 525px;
+  min-height: 525px;
   font-size: 110px;
   line-height: 118px;
   border-radius: 50px;
@@ -48,10 +50,15 @@ body {
     11px 4px 34px rgba(32, 77, 92, 0.702);
 }
 
+.details__weather .weather__icon {
+  height: 253px;
+}
+
 .details__weather .weather__temperature {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
+  margin-bottom: 54px;
   font-family: 'Oswald', sans-serif;
 }
 
@@ -63,7 +70,7 @@ body {
 .details__weather .weather__content {
   display: flex;
   flex-direction: column;
-  gap: 11px;
+  gap: 12px;
   font-size: 16px;
   line-height: 20px;
 }
@@ -79,6 +86,11 @@ body {
   margin-right: 8px;
   width: 32px;
   height: 32px;
+}
+
+.details__weather .weather__content .content__item span {
+  width: 48px;
+  text-align: center;
 }
 
 .details__weather .weather__content.content__dark-bg,
@@ -102,9 +114,10 @@ body {
   stroke: #e6df95;
 }
 
-.weekly-forecast__cloudy .details__weather .weather__icon {
+.weekly-forecast__cloudy .details__weather .weather__icon::before {
   position: relative;
-  top: 30px;
+  top: 54px;
+  left: 22px;
   content: url('./images/cloudy.svg');
 }
 
@@ -117,7 +130,9 @@ body {
   stroke: #4db0d3;
 }
 
-.weekly-forecast__sunny .details__weather .weather__icon {
+.weekly-forecast__sunny .details__weather .weather__icon::before {
+  position: relative;
+  top: 5px;
   content: url('./images/sunny.svg');
 }
 
@@ -130,7 +145,10 @@ body {
   stroke: #e6df95;
 }
 
-.weekly-forecast__stormy .details__weather .weather__icon {
+.weekly-forecast__stormy .details__weather .weather__icon::before {
+  position: relative;
+  top: 29px;
+  left: 20px;
   content: url('./images/stormy.svg');
 }
 
@@ -143,7 +161,10 @@ body {
   stroke: #0e2e3a;
 }
 
-.weekly-forecast__snowy .details__weather .weather__icon {
+.weekly-forecast__snowy .details__weather .weather__icon::before {
+  position: relative;
+  top: 8px;
+  left: 8px;
   content: url('./images/snowy.svg');
 }
 
@@ -156,7 +177,10 @@ body {
   stroke: #e6df95;
 }
 
-.weekly-forecast__rainy .details__weather .weather__icon {
+.weekly-forecast__rainy .details__weather .weather__icon::before {
+  position: relative;
+  top: -15px;
+  left: 25px;
   content: url('./images/rainy.svg');
 }
 
@@ -169,6 +193,9 @@ body {
   stroke: #e6df95;
 }
 
-.weekly-forecast__partly-cloudy .details__weather .weather__icon {
+.weekly-forecast__partly-cloudy .details__weather .weather__icon::before {
+  position: relative;
+  top: 23px;
+  left: 18px;
   content: url('./images/partly-cloudy.svg');
 }
