@@ -1,6 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Oswald&display=swap');
 
 body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
   font-family: 'Krona One', sans-serif;
 }
 
@@ -35,37 +40,57 @@ body {
   flex-direction: column;
   align-items: center;
   max-width: 165px;
-  font-family: 'Oswald', sans-serif;
+  height: 525px;
   font-size: 110px;
-  line-height: 163px;
+  line-height: 118px;
   border-radius: 50px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
     11px 4px 34px rgba(32, 77, 92, 0.702);
 }
 
+.details__weather .weather__temperature {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  font-family: 'Oswald', sans-serif;
+}
+
+.details__weather .weather__temperature svg {
+  width: 17px;
+  height: 17px;
+}
+
 .details__weather .weather__content {
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
   font-size: 16px;
   line-height: 20px;
 }
 
-.details__weather .weather__tmeperature::after {
-  content: '.';
+.weather__content .content__item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
-.details__weather .weather__content .content__chance-of-rain::before {
-  content: '☂';
+.details__weather .weather__content .content__item svg {
+  display: inline-block;
+  margin-right: 8px;
+  width: 32px;
+  height: 32px;
 }
 
-.details__weather .weather__content .content__temperature-max::before {
-  content: '🌡';
-}
-
-.details__weather .weather__content.content__dark-bg {
+.details__weather .weather__content.content__dark-bg,
+.details__weather .weather__content.content__dark-bg svg {
   color: #d3ebf4;
+  fill: #d3ebf4;
 }
 
-.details__weather .weather__content.content__light-bg {
+.details__weather .weather__content.content__light-bg,
+.details__weather .weather__content.content__light-bg svg {
   color: #247490;
+  fill: #247490;
 }
 
 .weekly-forecast__cloudy .details__weather {
@@ -73,13 +98,23 @@ body {
   background: #4db0d3;
 }
 
+.weekly-forecast__cloudy .details__weather .weather__temperature svg {
+  stroke: #e6df95;
+}
+
 .weekly-forecast__cloudy .details__weather .weather__icon {
+  position: relative;
+  top: 30px;
   content: url('./images/cloudy.svg');
 }
 
 .weekly-forecast__sunny .details__weather {
   color: #4db0d3;
   background: #e6df95;
+}
+
+.weekly-forecast__sunny .details__weather svg {
+  stroke: #4db0d3;
 }
 
 .weekly-forecast__sunny .details__weather .weather__icon {
@@ -91,6 +126,10 @@ body {
   background: #0e2e3a;
 }
 
+.weekly-forecast__stormy .details__weather .weather__temperature svg {
+  stroke: #e6df95;
+}
+
 .weekly-forecast__stormy .details__weather .weather__icon {
   content: url('./images/stormy.svg');
 }
@@ -98,6 +137,10 @@ body {
 .weekly-forecast__snowy .details__weather {
   color: #0e2e3a;
   background: #bce1ef;
+}
+
+.weekly-forecast__snowy .details__weather .weather__temperature svg {
+  stroke: #0e2e3a;
 }
 
 .weekly-forecast__snowy .details__weather .weather__icon {
@@ -109,6 +152,10 @@ body {
   background: #2b8bad;
 }
 
+.weekly-forecast__rainy .details__weather .weather__temperature svg {
+  stroke: #e6df95;
+}
+
 .weekly-forecast__rainy .details__weather .weather__icon {
   content: url('./images/rainy.svg');
 }
@@ -116,6 +163,10 @@ body {
 .weekly-forecast__partly-cloudy .details__weather {
   color: #e6df95;
   background: #4db0d3;
+}
+
+.weekly-forecast__partly-cloudy .details__weather .weather__temperature svg {
+  stroke: #e6df95;
 }
 
 .weekly-forecast__partly-cloudy .details__weather .weather__icon {
