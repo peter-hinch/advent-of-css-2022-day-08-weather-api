@@ -42,27 +42,27 @@
 <defs>
 <radialGradient id="paint0_radial_2_2341" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(123.298 121.134) rotate(-9.75807) scale(67.8166)">
 <stop stop-color="#AED5EB"/>
-<stop offset="0.186" stop-color="#C0DEEF"/>
-<stop offset="0.694" stop-color="#EEF6FB"/>
-<stop offset="0.95" stop-color="white"/>
+<stop offset="0.186" stop-color="rgba(192, 222, 239, 1)"/>
+<stop offset="0.694" stop-color="rgba(192, 222, 239, 0.6)"/>
+<stop offset="0.95" stop-color="rgba(192, 222, 239, 0)"/>
 </radialGradient>
 <radialGradient id="paint1_radial_2_2341" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(140.077 83.7685) rotate(-9.75807) scale(83.2595)">
 <stop stop-color="#AED5EB"/>
-<stop offset="0.186" stop-color="#C0DEEF"/>
-<stop offset="0.694" stop-color="#EEF6FB"/>
-<stop offset="0.95" stop-color="white"/>
+<stop offset="0.186" stop-color="rgba(192, 222, 239, 1)"/>
+<stop offset="0.694" stop-color="rgba(192, 222, 239, 0.6)"/>
+<stop offset="0.95" stop-color="rgba(192, 222, 239, 0)"/>
 </radialGradient>
 <radialGradient id="paint2_radial_2_2341" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(145.523 112.359) rotate(-9.75807) scale(83.1081)">
 <stop stop-color="#AED5EB"/>
-<stop offset="0.186" stop-color="#C0DEEF"/>
-<stop offset="0.694" stop-color="#EEF6FB"/>
-<stop offset="0.95" stop-color="white"/>
+<stop offset="0.186" stop-color="rgba(192, 222, 239, 1)"/>
+<stop offset="0.694" stop-color="rgba(192, 222, 239, 0.6)"/>
+<stop offset="0.95" stop-color="rgba(192, 222, 239, 0)"/>
 </radialGradient>
 <radialGradient id="paint3_radial_2_2341" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(82.6152 109.113) rotate(-9.75807) scale(83.1081)">
 <stop stop-color="#AED5EB"/>
-<stop offset="0.186" stop-color="#C0DEEF"/>
-<stop offset="0.694" stop-color="#EEF6FB"/>
-<stop offset="0.95" stop-color="white"/>
+<stop offset="0.186" stop-color="rgba(192, 222, 239, 1)"/>
+<stop offset="0.694" stop-color="rgba(192, 222, 239, 0.6)"/>
+<stop offset="0.95" stop-color="rgba(192, 222, 239, 0)"/>
 </radialGradient>
 </defs>
 </svg>

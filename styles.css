@@ -73,10 +73,6 @@ body {
   background: #4db0d3;
 }
 
-.details__weather .weather__icon {
-  /* mix-blend-mode: multiply; */
-}
-
 .weekly-forecast__cloudy .details__weather .weather__icon {
   content: url('./images/cloudy.svg');
 }
@@ -110,7 +106,7 @@ body {
 
 .weekly-forecast__rainy .details__weather {
   color: #e6df95;
-  background: #4db0d3;
+  background: #2b8bad;
 }
 
 .weekly-forecast__rainy .details__weather .weather__icon {
@@ -119,7 +115,7 @@ body {
 
 .weekly-forecast__partly-cloudy .details__weather {
   color: #e6df95;
-  background: #2b8bad;
+  background: #4db0d3;
 }
 
 .weekly-forecast__partly-cloudy .details__weather .weather__icon {
